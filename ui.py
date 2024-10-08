@@ -104,7 +104,7 @@ class SelectorArchivos(QWidget):
         # Buscar tipos de piezas en los bloques predeterminados
         for bloque in self.datos["def"]["DefaultBlocks"]:
             for pieza in bloque.get("Pieces", []):
-                tipo = pieza.get("__type")
+                tipo = pieza.get("type")
                 if tipo:
                     tiposPiezas.add(tipo)
 
